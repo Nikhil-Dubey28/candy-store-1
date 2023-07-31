@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Candy Shop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center my-5">Candy Shop</h1>
+        <div class="card">
+            <div class="card-body">
+                <form id="candyForm">
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" id="candyName" class="form-control" placeholder="Candy Name">
+                        </div>
+                        <div class="col">
+                            <input type="text" id="candyDescription" class="form-control" placeholder="Description">
+                        </div>
+                        <div class="col">
+                            <input type="number" id="candyPrice" class="form-control" placeholder="Price">
+                        </div>
+                        <div class="col">
+                            <input type="number" id="candyQuantity" class="form-control" placeholder="Quantity">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary my-3">Add Item</button>
+                </form>
+            </div>
+        </div>
+        <ul id="candyList" class="list-group my-5"></ul>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
